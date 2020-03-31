@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stuff</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .myContainer{
+            width:100% ;
+            height:100px ;
+            background-color: #522d5b;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body style="background-color: #e7d39f" >
+<div class="myContainer"><h1>The game of life</h1></div>
+<hr>
+<div class="container-fluid" id="body">
+    <p style="text-align: center"><h3>A Brief explanation</h3>he Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.[1]  The game is a zero-player game,
+    meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves.
+    It is Turing complete and can simulate a universal constructor or any other Turing machine. <br> <h3>Rules</h3> <br> The universe of the Game of Life is an infinite, two-dimensional orthogonal grid
+    of square cells, each of which is in one of two possible states, alive or dead, (or populated and unpopulated, respectively). Every cell interacts with its eight neighbours, which are the cells that
+    are horizontally, vertically, or diagonally adjacent. At each step in time, the following transitions occur: <br>
+    <ul>
+        <li>Any live cell with fewer than two live neighbours dies, as if by underpopulation.</li>
+        <li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+        <li>Any live cell with more than three live neighbours dies, as if by overpopulation.</li>
+        <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
+    </ul>
+    <br>
+    For more <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"> Documentation</a> . <br>
+    <h3>Here is a simulation of the game :</h3>
+    </p>
+    <hr>
+<canvas  height="701" id="myCanvas" class="figure"></canvas>
+</div>
+<button id="play" >play</button>
+<button id="count">countNeighbors</button>
+<button id="randomize">Generate random cells</button>
+<button id="number"> clear Numbers</button>
+<button id="clearing">clear the grid</button>
+<p  style="font : 18px Arial large;margin-top: 10px " >Generation : <span id="generation" >0</span> </p> <small>click on the number to reinitialize it</small>
+<script src="script.js"> </script>
+</body>
+</html>
