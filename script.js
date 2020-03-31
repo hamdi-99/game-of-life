@@ -110,6 +110,7 @@ function moveGeneration() {
     if(test) {
         clearInterval(game);
         button.addEventListener("click", begin);
+        button.innerHTML="play" ;
         rndBTN.addEventListener("click", random);
         canvas.addEventListener("click", makeItLive);
         clearBTN.addEventListener("click" ,clear ) ;
